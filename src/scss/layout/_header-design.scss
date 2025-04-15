@@ -1,0 +1,44 @@
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: $container-secondary;
+
+  &__title {
+    font-size: 3rem;
+    line-height: $line-height-sm;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $color-grey;
+    width: min(100% - $gap-xl, $container-secondary);
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    min-width: 225px;
+    min-height: 65px;
+    color: $color-white;
+    margin-top: 60px;
+    letter-spacing: $letter-spacing;
+  }
+}
+
+.about {
+  gap: $gap;
+  background-color: $color-white;
+
+  &__title,
+  &__text {
+    margin-inline: auto;
+  }
+
+  &__text {
+    color: $color-grey;
+    width: min(100% - $gap-xl, $container-secondary);
+  }
+}

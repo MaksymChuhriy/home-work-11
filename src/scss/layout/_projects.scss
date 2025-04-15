@@ -1,0 +1,25 @@
+.projects {
+  background-color: $color-secondary;
+  color: $color-white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $gap-xl;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    width: 140px;
+  }
+
+  &__item-number {
+    font-size: 1.3125rem;
+  }
+}
