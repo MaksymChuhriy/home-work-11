@@ -316,17 +316,15 @@ body{
     margin-bottom:70px;
   }
 }
-@media (width < 992px){
-  .navbar__list{
-    -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
-  }
-}
 @media (width < 576px){
   .work, .about{
     padding-top:70px;
     padding-bottom:50px;
+  }
+  .navbar__list{
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
   }
 }
 @media (992px <= width){
