@@ -1,3 +1,10 @@
+@use "../abstracts/" as *;
 .title {
-  font-weight: var(--font-weight-title);
+  font-weight: $font-weight-title;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: $line-height;
+  font-size: 16px;
 }

@@ -1,10 +1,20 @@
+@use "../abstracts/" as *;
 .navbar {
   margin-bottom: 141px;
+  @include lg-min() {
+    margin-bottom: 141px;
+  }
+  @include lg-sm {
+    margin-bottom: 70px;
+  }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @include lg() {
+      justify-content: center;
+    }
   }
 
   &__link {

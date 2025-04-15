@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+.about {
+  @extend %section;
+  gap: $gap;
+  background-color: $color-white;
+  &__container {
+    @extend %container;
+  }
+  &__title {
+    @extend %title;
+    margin-inline: auto;
+  }
+
+  &__text {
+    margin-inline: auto;
+  }
+
+  &__text {
+    @extend %container-secondary;
+  }
+}

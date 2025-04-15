@@ -1,0 +1,32 @@
+@use "./skins" as *;
+@use "./variables" as *;
+%secondary-background {
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+%section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  text-align: center;
+  background-color: $color-primary;
+  @media (width < $sm) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+%container {
+  width: min(100% - $gap-xl, $container-primary);
+  margin-inline: auto;
+}
+
+%title {
+  font-weight: $font-weight-title;
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+%container-secondary {
+  color: $color-grey;
+  width: min(100% - $gap-xl, $container-secondary);
+}

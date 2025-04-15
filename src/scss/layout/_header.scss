@@ -1,5 +1,12 @@
+@use "../abstracts/" as *;
 .header {
-  background-color: $color-primary;
+  background-color: $color-white;
   padding-top: 65px;
   padding-bottom: 141px;
+  @mixin sm() {
+    padding-bottom: 80px;
+  }
+  &__container {
+    @extend %container;
+  }
 }

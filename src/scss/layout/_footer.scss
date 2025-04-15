@@ -1,0 +1,16 @@
+@use "../abstracts";
+.footer {
+  padding: 50px 0;
+  @extend %secondary-background;
+
+  &__container {
+    @extend %container;
+  }
+  &__top {
+    font-size: 1.3125rem;
+  }
+
+  &__bottom {
+    font-size: 0.8rem;
+  }
+}

@@ -1,8 +1,14 @@
+@use "../abstracts/" as *;
 .design {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: $container-secondary;
+
+  @mixin sm {
+    text-align: center;
+    align-items: center;
+  }
 
   &__title {
     font-size: 3rem;
@@ -11,8 +17,7 @@
   }
 
   &__text {
-    color: $color-grey;
-    width: min(100% - $gap-xl, $container-secondary);
+    @extend %container-secondary;
   }
 
   &__button {
@@ -25,20 +30,6 @@
     color: $color-white;
     margin-top: 60px;
     letter-spacing: $letter-spacing;
-  }
-}
-
-.about {
-  gap: $gap;
-  background-color: $color-white;
-
-  &__title,
-  &__text {
-    margin-inline: auto;
-  }
-
-  &__text {
-    color: $color-grey;
-    width: min(100% - $gap-xl, $container-secondary);
+    @extend %secondary-background;
   }
 }
